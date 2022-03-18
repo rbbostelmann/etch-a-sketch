@@ -2,11 +2,16 @@
 let canvas = document.getElementById("canvas")
 let tiles;
 
-//Button variables
+//Button variables for actions
 let blackBtn = document.getElementById("black-btn")
 let rainbowBtn = document.getElementById("rainbow-btn")
 let eraserBtn = document.getElementById("eraser-btn")
-let clearBtn = document.getElementById("clear-btn")
+let clearBtn = document.getElementById("clear-btn");
+
+//Button variables for sizing
+let btn_32 = document.getElementsByClassName("32-btn")
+let btn_64 = document.getElementsByClassName("64-btn")
+let btn_128 = document.getElementsByClassName("128-btn")
 
 
 //Populates the canvas with the tiles

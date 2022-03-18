@@ -10,7 +10,7 @@
         flex-direction: row;
         justify-items: center;
         align-items: center;
-        background-color: rgba(218, 165, 32, .5);
+        background-color: #eec591;
         gap: 50px;
         margin: 20px;
         padding: 20px;
@@ -26,7 +26,8 @@
     
     button {
         font-size: 2vh;
-        color: rgb(0, 0, 0);
+        font-weight: 600;
+        color: #8876ea;
         transition: all 0.3s;
         position: relative;
         width: 100px;
@@ -71,7 +72,7 @@
         height: 100%;
         z-index: 1;
         transition: all 0.3s;
-        background-color: rgba(214, 214, 214, 0.061);
+        background-color: #93ea7628;
     }
     
     button:hover::after {
@@ -102,7 +103,7 @@
         height: 520px;
         margin: 0;
         padding: 0;
-        box-shadow: 3px 3px rgb(71, 60, 60);
+        box-shadow: 3px 3px #95744b;
         background-color: white;
     }
     

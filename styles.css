@@ -17,6 +17,21 @@
         gap: 20px;
     }
     
+    #size-container {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
     #canvas {
         display: grid;
         grid-template-columns: repeat(16, 1fr);
@@ -33,12 +48,4 @@
         width: auto;
         height: auto;
         border: 1px solid rgb(255, 174, 0);
-    }
-    
-    .on {
-        background-color: black;
-    }
-    
-    .off {
-        background-color: white;
     }

@@ -15,7 +15,6 @@ window.onload = (e) => {
         const newDiv = document.createElement("div")
         newDiv.setAttribute("id", "tile")
         newDiv.classList.add("tile-" + i)
-        newDiv.classList.add("off")
         canvas.appendChild(newDiv)
 
         //"Return" tiles to the global variable

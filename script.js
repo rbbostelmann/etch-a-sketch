@@ -9,9 +9,21 @@ let eraserBtn = document.getElementById("eraser-btn")
 let clearBtn = document.getElementById("clear-btn");
 
 //Button variables for sizing
-let btn_32 = document.getElementsByClassName("32-btn")
-let btn_64 = document.getElementsByClassName("64-btn")
-let btn_128 = document.getElementsByClassName("128-btn")
+let resizeBtn = document.querySelectorAll("#resize-btn")
+
+//Resizing prototype, still not working =()
+for (let i = 0; i <= 2; i++) {
+    resizeBtn[i].addEventListener("click", e => {
+        if (resizeBtn[i].classList.contains("32")) {
+            alert("Sorry, I still haven't managed to do this :(")
+        } else if (resizeBtn[i].classList.contains("64")) {
+            alert("Sorry, I haven't managed to do this either :(")
+        } else {
+            alert("And this one as well :(")
+        }
+    })
+}
+
 
 
 //Populates the canvas with the tiles

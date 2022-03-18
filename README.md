@@ -99,4 +99,10 @@ Day 5
 
 Let's get some CSS going along with some buttons.
 
+Added JS functionality to the buttons, styled some of the stuff and then got stuck on the resizing bit.
+
+No idea how to do that for now. Will revisit later.
+
+I also need to position things a bit better, but thatś easier than resizing the grid.
+
 ---

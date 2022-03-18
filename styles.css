@@ -1,11 +1,20 @@
     body {
         box-sizing: border-box;
         display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        gap: 50px;
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    #button-container {
+        display: flex;
         flex-direction: column;
         justify-items: center;
         align-items: center;
-        margin: 20px;
-        padding: 20px;
+        gap: 20px;
     }
     
     #canvas {
@@ -26,11 +35,6 @@
         border: 1px solid rgb(255, 174, 0);
     }
     
-    #tile:hover {
-        background-color: rgba(136, 133, 133, 0.06);
-    }
-    /*Simulation of what will become JS code*/
-    
     .on {
         background-color: black;
     }
@@ -38,6 +42,3 @@
     .off {
         background-color: white;
     }
-    /*Will reset the canvas*/
-    
-    .reset {}

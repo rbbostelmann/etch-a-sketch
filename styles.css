@@ -1,9 +1,16 @@
+    @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+    html,
+    button {
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    
     body {
         box-sizing: border-box;
         display: flex;
         flex-direction: row;
         justify-items: center;
         align-items: center;
+        background-color: rgba(218, 165, 32, .5);
         gap: 50px;
         margin: 20px;
         padding: 20px;
@@ -15,6 +22,61 @@
         justify-items: center;
         align-items: center;
         gap: 20px;
+    }
+    
+    button {
+        font-size: 2vh;
+        color: rgb(0, 0, 0);
+        transition: all 0.3s;
+        position: relative;
+        width: 100px;
+        padding: 3px;
+        line-height: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    button span {
+        transition: all 0.3s;
+    }
+    
+    button::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+        transition: all 0.3s;
+        transform: scale(0.1, 1);
+    }
+    
+    button:hover span {
+        letter-spacing: 2px;
+    }
+    
+    button:hover::before {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+    
+    button::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: all 0.3s;
+        background-color: rgba(214, 214, 214, 0.061);
+    }
+    
+    button:hover::after {
+        opacity: 0;
+        transform: scale(0.1, 1);
     }
     
     #size-container {
@@ -40,12 +102,12 @@
         height: 520px;
         margin: 0;
         padding: 0;
-        box-shadow: 3px 3px rgba(71, 60, 60, 0.158);
-        border: 1px solid red;
+        box-shadow: 3px 3px rgb(71, 60, 60);
+        background-color: white;
     }
     
     #tile {
         width: auto;
         height: auto;
-        border: 1px solid rgb(255, 174, 0);
+        border: 1px solid rgb(136, 136, 136);
     }

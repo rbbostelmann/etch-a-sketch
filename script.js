@@ -78,3 +78,5 @@ function clear() {
         document.querySelectorAll("#tile")[i].style.backgroundColor = "white";
     }
 }
+
+///**WRITE CODE FOR RESIZING BUTTONS */

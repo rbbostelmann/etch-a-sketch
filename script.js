@@ -26,25 +26,16 @@ window.onload = (e) => {
 //Event listener for the black button to start drawing
 blackBtn.addEventListener("click", e => {
     draw()
-    if (rainbow === true) {
-        return
-    }
 })
 
 //Event listener for the rainbow button to start drawing
 rainbowBtn.addEventListener("click", e => {
     rainbow()
-    if (draw === true) {
-        return
-    }
 })
 
 //Event listener for the black button to start drawing
 eraserBtn.addEventListener("click", e => {
     erase()
-    if (draw === true) {
-        return
-    }
 })
 
 //Event listener for the black button to start drawing
@@ -55,8 +46,6 @@ clearBtn.addEventListener("click", e => {
 
 //Draw function with mouse over
 function draw() {
-
-
     for (let i = 0; i <= 255; i++) {
         tiles[i].addEventListener("mouseover", () => {
             document.querySelectorAll("#tile")[i].style.backgroundColor = "black";
@@ -70,6 +59,7 @@ function rainbow() {
         tiles[i].addEventListener("mouseover", () => {
             const randomColor = Math.floor(Math.random() * 16777215).toString(16);
             document.querySelectorAll("#tile")[i].style.backgroundColor = "#" + randomColor;
+            checking = false
         })
     }
 }
@@ -77,7 +67,7 @@ function rainbow() {
 //Eraser function with mouse over
 function erase() {
     for (let i = 0; i <= 255; i++) {
-        tiles[i].addEventListener("click", () => {
+        tiles[i].addEventListener("mouseover", () => {
             document.querySelectorAll("#tile")[i].style.backgroundColor = "white";
         })
     }

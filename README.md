@@ -94,3 +94,9 @@ I now just need to set some buttons and assign some functions to the buttons and
 I still want to have a color picker, but will work on that further down the line when all of the other elements are already working and set.
 
 ---
+
+Day 5
+
+Let's get some CSS going along with some buttons.
+
+---

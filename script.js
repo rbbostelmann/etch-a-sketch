@@ -46,21 +46,20 @@ clearBtn.addEventListener("click", e => {
 function draw() {
     for (let i = 0; i <= 255; i++) {
         tiles[i].addEventListener("mouseover", () => {
-            if (tiles[i].classList.contains("off")) {
-                tiles[i].classList.remove("off")
-                tiles[i].classList.add("on")
-            }
+            document.querySelectorAll("#tile")[i].style.backgroundColor = "black";
         })
     }
 }
 
 //
 function rainbow() {
-    tiles[2].addEventListener("mouseover", () => {
-        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-        document.body.style.backgroundColor = "#" + randomColor;
+    for (let i = 0; i <= 255; i++) {
+        tiles[i].addEventListener("mouseover", () => {
+            const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            document.querySelectorAll("#tile")[i].style.backgroundColor = "#" + randomColor;
 
-    })
+        })
+    }
 }
 
 
@@ -68,10 +67,8 @@ function rainbow() {
 //Eraser function with mouse over
 function erase() {
     for (let i = 0; i <= 255; i++) {
-        tiles[i].addEventListener("mouseover", () => {
-            tiles[i].classList.remove("on")
-            tiles[i].classList.remove("rainbow")
-            tiles[i].classList.add("off")
+        tiles[i].addEventListener("click", () => {
+            document.querySelectorAll("#tile")[i].style.backgroundColor = "white";
         })
     }
 }
@@ -79,9 +76,7 @@ function erase() {
 //Clear function that clears the canvas
 function clear() {
     for (let i = 0; i <= 255; i++) {
-        tiles[i].classList.remove("on")
-        tiles[i].classList.remove("rainbow")
-        tiles[i].classList.add("off")
+        document.querySelectorAll("#tile")[i].style.backgroundColor = "white";
 
     }
 }

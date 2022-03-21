@@ -106,3 +106,9 @@ No idea how to do that for now. Will revisit later.
 I also need to position things a bit better, but thatś easier than resizing the grid.
 
 ---
+
+Day 6
+
+Tried to add a color picker and it sort of worked, but not as a button. After many frustrated attempts I scraped off the idea. I also couldn advance with the resizing. I want to go back to it someday, but for now Iḿ just really tired and lacking any meaningful help, so I'll see if learning some more gives me any insights.
+
+Feedback appreciated!

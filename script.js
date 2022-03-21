@@ -24,8 +24,6 @@ for (let i = 0; i <= 2; i++) {
     })
 }
 
-
-
 //Populates the canvas with the tiles
 window.onload = (e) => {
     for (let i = 1; i <= 256; i++) {
@@ -58,7 +56,6 @@ eraserBtn.addEventListener("click", e => {
 clearBtn.addEventListener("click", e => {
     clear()
 })
-
 
 //Draw function with mouse over
 function draw() {
